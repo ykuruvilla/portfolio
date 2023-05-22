@@ -4,10 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Yasha Kuruvilla</title>
   </head>
-  <body>
-    <h1 class="text-red-400 text-4xl">Hello World</h1>
+  <body class="font-sans bg-[#f7f7f7] text-black mx-12">
+    <div class="w-max-5xl">
+      <section class="pt-10 flex flex-col items-center">
+        <div class="flex flex-col items-center lg:flex-row">
+          <div class="border-2 border-black rounded-full mb-12 lg:mr-10">
+            <img
+              class="object-cover w-64 h-64 md:w-[350px] md:h-[350px] rounded-full"
+              src="./assets/headshot.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="lg:w-96">
+            <div class="text-center lg:text-left">
+              <p>HI THERE! I'm</p>
+              <h1 class="text-4xl tracking-wider my-6">
+                <span class="text-purple">YASHA</span> KURUVILLA
+              </h1>
+              <p class="text-lightgrey mb-8 tracking-wide">
+                <span class="text-purple">A Front-End Web Developer</span>
+                passionate about creating interactive applications and
+                experiences on the web.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center sm:flex-row sm:items-center justify-center lg:justify-between"
+            >
+              <a
+                class="bg-purple text-white px-9 py-4 rounded-[40px] w-36 text-center mb-4 sm:mb-0"
+                href="/"
+                >Resumé</a
+              >
+              <ul class="flex justify-center">
+                <li
+                  class="w-8 h-8 p-1 bg-white rounded-md border-1 border-white mx-4 hover:shadow-md transition-shadow duration-200"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/yasha-kuruvilla/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/linkedin.png"
+                      alt="yasha's linkedin profile"
+                    />
+                  </a>
+                </li>
+                <li
+                  class="w-8 h-8 p-1 bg-white rounded-md border-1 border-white hover:shadow-md transition-shadow duration-200"
+                >
+                  <a href="https://github.com/ykuruvilla" target="_blank">
+                    <img
+                      src="./assets/github.png"
+                      alt="yasha's github profile"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
