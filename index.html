@@ -13,35 +13,51 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Yasha Kuruvilla</title>
   </head>
-  <body class="font-sans bg-[#f7f7f7] text-black mx-12">
-    <div class="space-y-10">
+
+  <body id="home" class="bg-[#f7f7f7]">
+    <nav class="md:block md:bg-green md:p-4 md:fixed md:top-0 md:w-screen">
+      <ul class="flex space-x-2 justify-end text-white">
+        <li class="cursor:pointer"><a href="#home">Home</a></li>
+        <li class="cursor:pointer"><a href="#about">About</a></li>
+        <li class="cursor:pointer"><a href="#skills">Skills</a></li>
+        <li class="cursor:pointer"><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <button id="hamburger" class="md:hidden focus:outline-none">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <div class="space-y-10 font-sans text-black md:pt-20 mx-12 mb-10">
       <section class="pt-10 flex flex-col items-center">
-        <div class="flex flex-col items-center lg:flex-row">
-          <div class="border-2 border-black rounded-full mb-12 lg:mr-10">
+        <div class="flex flex-col items-center md:flex-row">
+          <div class="border-2 border-black rounded-full mb-12 md:mr-10">
             <img
-              class="object-cover w-64 h-64 md:w-[350px] md:h-[350px] rounded-full"
+              class="object-cover w-64 h-64 md:w-[300px] md:h-[300px] rounded-full"
               src="./assets/headshot.jpeg"
               alt=""
             />
           </div>
-          <div class="lg:w-96">
-            <div class="text-center lg:text-left">
+          <div class="md:w-96">
+            <div class="text-center md:text-left">
               <p>HI THERE! I'm</p>
               <h1 class="text-4xl tracking-wider my-6">
-                <span class="text-purple">YASHA</span> KURUVILLA
+                <span class="text-green">YASHA</span> KURUVILLA
               </h1>
               <p class="text-lightgrey mb-8 tracking-wide">
-                <span class="text-purple">A Front-End Web Developer</span>
+                <span class="text-green">A Web Developer</span>
                 passionate about creating interactive applications and
                 experiences on the web.
               </p>
             </div>
             <div
-              class="flex flex-col items-center sm:flex-row sm:items-center sm:space-x-3 justify-center lg:justify-between"
+              class="flex flex-col items-center sm:flex-row sm:items-center sm:space-x-3 justify-center md:justify-between"
             >
               <a
-                class="bg-purple text-white px-9 py-4 rounded-[40px] w-36 text-center mb-4 sm:mb-0"
-                href="/"
+                class="bg-green text-white px-9 py-4 rounded-[40px] w-36 text-center mb-4 sm:mb-0"
+                href="./assets/yasha-kuruvilla-resume.pdf"
+                download
                 >Resumé</a
               >
               <ul class="flex justify-center space-x-3">
@@ -69,7 +85,7 @@
           </div>
         </div>
       </section>
-      <section class="lg:max-w-5xl lg:mx-auto">
+      <section id="about" class="lg:max-w-5xl lg:mx-auto">
         <div class="mb-10">
           <h2 class="text-2xl inline pb-4 border-b-4 border-lightgrey">
             ABOUT ME
@@ -78,7 +94,7 @@
         <p class="sm:bg-white sm:p-11 rounded-xl">
           Hi there! I'm Yasha, a front-end developer with a passion for solving
           challenging problems. I recently graduated from the
-          <span class="text-purple">
+          <span class="text-green">
             BrainStation Software Engineering Bootcamp </span
           >, where I gained hands-on experience in building web applications.
           With a background in business analysis, I bring a unique perspective
@@ -88,9 +104,9 @@
           applications. Let's connect and tackle exciting challenges together!
         </p>
       </section>
-      <section class="lg:max-w-5xl lg:mx-auto">
+      <section id="skills" class="lg:max-w-5xl lg:mx-auto">
         <h2 class="text-2xl inline pb-4 border-b-4 border-lightgrey">SKILLS</h2>
-        <ul class="flex flex-wrap mt-10 sm:bg-white sm:p-11">
+        <ul class="flex flex-wrap mt-10 sm:bg-white sm:p-11 rounded-xl">
           <li class="skill-item">
             <div>
               <img src="./assets/html.png" alt="html logo" />
@@ -159,6 +175,131 @@
           </li>
         </ul>
       </section>
+      <section id="projects" class="lg:max-w-5xl lg:mx-auto">
+        <h2 class="text-2xl inline pb-4 border-b-4 border-lightgrey">
+          PROJECTS
+        </h2>
+        <div class="mt-10 space-y-8">
+          <article class="project-item">
+            <div class="md:w-1/2">
+              <img
+                class="rounded-xl"
+                src="./assets/asteroids.png"
+                alt="asteroids"
+              />
+            </div>
+            <div class="p-5 md:w-1/2">
+              <div class="">
+                <h3 class="text-xl">
+                  Asteroids
+                  <span class="text-xs font-style: italic">(Desktop only)</span>
+                </h3>
+                <p>
+                  Technologies Used: <span class="text-green">Javascript</span>
+                </p>
+                <ul class="mt-3 pl-4 space-y-1">
+                  <li>Completely built with vanilla javascript</li>
+                  <li>Based on Atari's vintage Asteroids game</li>
+                </ul>
+              </div>
+              <div class="mt-3 space-x-2">
+                <a
+                  class="underline text-green"
+                  href="https://asteroids-pi.vercel.app/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  class="underline text-green"
+                  href="https://github.com/ykuruvilla/asteroids"
+                  target="_blank"
+                  >Repo</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="md:w-1/2">
+              <img
+                class="rounded-xl"
+                src="./assets/watchdle.png"
+                alt="watchdle"
+              />
+            </div>
+            <div class="p-5 md:w-1/2">
+              <div class="">
+                <h3 class="text-xl">Watchdle</h3>
+                <p>
+                  Technologies Used:
+                  <span class="text-green">Next.js , MongDB , REST API</span>
+                </p>
+                <ul class="mt-3 pl-4 space-y-1">
+                  <li>Built with NextJS, utilising MongoDB</li>
+                  <li>
+                    A Wordle styled guessing game based on Blizzard's Overwatch
+                    video game
+                  </li>
+                  <li>My first project using NextJS</li>
+                </ul>
+              </div>
+              <div class="mt-3 space-x-2">
+                <a
+                  class="underline text-green"
+                  href="https://watchdle.vercel.app/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  class="underline text-green"
+                  href="https://github.com/ykuruvilla/watchdle"
+                  target="_blank"
+                  >Repo</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="md:w-1/2">
+              <img
+                class="rounded-xl"
+                src="./assets/imdb.jpeg"
+                alt="imdb clone"
+              />
+            </div>
+            <div class="p-5 md:w-1/2">
+              <div class="">
+                <h3 class="text-xl">IMDb Clone</h3>
+                <p>
+                  Technologies Used:
+                  <span class="text-green">NextJS, Tailwind, REST API</span>
+                </p>
+                <ul class="mt-3 pl-4 space-y-1">
+                  <li>A simplified clone of the IMDb website</li>
+                  <li>
+                    Search for movies, get a summary, and see the average rating
+                  </li>
+                  <li>My first project using Tailwind</li>
+                </ul>
+              </div>
+              <div class="mt-3 space-x-2">
+                <a
+                  class="underline text-green"
+                  href="https://imdb-clone-kappa-gilt.vercel.app/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  class="underline text-green"
+                  href="https://github.com/ykuruvilla/imdb-clone"
+                  target="_blank"
+                  >Repo</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
