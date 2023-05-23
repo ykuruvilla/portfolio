@@ -10,7 +10,7 @@
   .skill-item {
     @apply bg-white w-20 p-2 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-200 m-2 border-[1px] border-[#eee];
 
-    & div {
+    /* & div {
       @apply flex flex-col items-center;
 
       & img {
@@ -20,7 +20,7 @@
       & p {
         @apply text-xs text-center mt-2;
       }
-    }
+    } */
   }
 
   .project-item {

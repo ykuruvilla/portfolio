@@ -569,37 +569,17 @@ video {
 }
 
 .skill-item {
-  & div {
-    display: flex;
-  }
-  & div {
-    flex-direction: column;
-  }
-  & div {
-    align-items: center;
-  }
-  & div {
-    & img {
-      height: 2.25rem;
-    }
-    & img {
-      width: 2.25rem;
-    }
-    & img {
-      -o-object-fit: contain;
-         object-fit: contain;
-    }
-    & p {
-      margin-top: 0.5rem;
-    }
-    & p {
-      text-align: center;
-    }
-    & p {
-      font-size: 0.75rem;
-      line-height: 1rem;
-    }
-  }
+  /* & div {
+      @apply flex flex-col items-center;
+
+      & img {
+        @apply w-9 h-9 object-contain;
+      }
+
+      & p {
+        @apply text-xs text-center mt-2;
+      }
+    } */
 }
 
 .project-item {
@@ -704,6 +684,10 @@ video {
   margin-top: 4rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -736,12 +720,20 @@ video {
   height: 16rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .w-36 {
   width: 9rem;
 }
 
 .w-64 {
   width: 16rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .w-full {
@@ -859,6 +851,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
