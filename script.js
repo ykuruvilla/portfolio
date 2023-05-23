@@ -81,14 +81,18 @@ const handleFormSubmit = (e) => {
 
   validateForm(name, _replyto, message);
   if (formisValid) {
-    submitButtonEl.textContent = "Message sent!";
-    formEl.reset();
-    setTimeout(() => {
-      submitButtonEl.textContent = "Submit";
-    }, 3000);
-    // axios
-    //   .post("https://formspree.io/f/xayzzejy", { name, _replyto, message })
-    //   .then((res) => console.log(res));
+    axios
+      .post("https://formspree.io/f/xayzzejy", { name, _replyto, message })
+      .then((_res) => {
+        submitButtonEl.textContent = "Message sent!";
+        formEl.reset();
+        setTimeout(() => {
+          submitButtonEl.textContent = "Submit";
+        }, 3000);
+      })
+      .catch((err) => {
+        alert("Oops! Something went wrong");
+      });
   }
 };
 
