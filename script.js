@@ -8,9 +8,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-let list = document.querySelector("ul");
+let list = document.getElementById("navlist");
 const menu = document.getElementById("menu");
 const navBarHandler = (e) => {
+  console.log("hi");
   e.target.name === "menu"
     ? ((e.target.name = "close"),
       list.classList.add("top-[80px]"),
