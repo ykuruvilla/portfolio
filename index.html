@@ -41,6 +41,9 @@
         <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
           <a href="#projects">Projects</a>
         </li>
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
 
@@ -314,6 +317,83 @@
           </article>
         </div>
       </section>
+      <section id="contact" class="lg:max-w-5xl lg:mx-auto mb-3">
+        <h2 class="text-2xl inline pb-4 border-b-4 border-lightgrey">
+          CONTACT ME
+        </h2>
+        <div class="mt-16 rounded-xl md:bg-white md:p-6">
+          <h4 class="text-xl">Get in Touch</h4>
+          <div
+            class="flex flex-col items-center bg-white shadow-md rounded-xl p-6 space-y-4 mt-4 md:max-w-lg md:mx-auto"
+          >
+            <ion-icon
+              class="text-3xl text-green"
+              name="mail-outline"
+            ></ion-icon>
+            <p class="text-xl underline font-semibold" id="my-email"></p>
+            <p>Email Me</p>
+          </div>
+          <div class="mt-5 p-2">
+            <h5 class="text-xl">Contact Form</h5>
+            <form id="contact-form" class="flex flex-col mt-5 space-y-4">
+              <div class="space-y-4 md:space-y-0 md:flex md:space-x-3">
+                <div class="flex flex-col md:w-1/2">
+                  <label for="full-name">Name</label>
+                  <input
+                    class="my-1 p-2 md:bg-[#f7f7f7]"
+                    type="text"
+                    name="name"
+                    id="full-name"
+                    placeholder="Your name"
+                  />
+                  <span id="name-error" class="text-xs invisible text-red-500"
+                    >Required field</span
+                  >
+                </div>
+                <div class="flex flex-col md:w-1/2">
+                  <label for="email-address">Email Address</label>
+                  <input
+                    class="my-1 p-2 md:bg-[#f7f7f7]"
+                    type="text"
+                    name="_replyto"
+                    id="email-address"
+                    placeholder="Your email"
+                  />
+                  <span
+                    id="email-format-error"
+                    class="text-xs hidden text-red-500"
+                    >Invalid email</span
+                  >
+                  <span
+                    id="email-length-error"
+                    class="text-xs invisible text-red-500"
+                    >Required field</span
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <label for="message">Message</label>
+                <textarea
+                  class="my-1 p-2 md:bg-[#f7f7f7]"
+                  rows="5"
+                  name="message"
+                  id="message"
+                  placeholder="Your message here..."
+                ></textarea>
+                <span id="message-error" class="text-xs invisible text-red-500"
+                  >Required field</span
+                >
+              </div>
+              <button
+                id="submit"
+                class="bg-green text-white px-9 py-4 rounded-[40px] w-full md:w-48 text-center mb-4 self-center"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="./script.js"></script>
     <script
@@ -324,5 +404,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
