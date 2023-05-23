@@ -11,14 +11,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 let list = document.getElementById("navlist");
 const menu = document.getElementById("menu");
 const navBarHandler = (e) => {
-  console.log("hi");
   e.target.name === "menu"
-    ? ((e.target.name = "close"),
-      list.classList.add("top-[80px]"),
-      list.classList.add("opacity-100"))
-    : ((e.target.name = "menu"),
-      list.classList.remove("top-[80px]"),
-      list.classList.remove("opacity-100"));
+    ? ((e.target.name = "close"), list.classList.remove("top-[-400px]"))
+    : ((e.target.name = "menu"), list.classList.add("top-[-400px]"));
 };
 
 menu.addEventListener("click", navBarHandler);

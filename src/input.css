@@ -8,17 +8,17 @@
   }
 
   .skill-item {
-    @apply bg-white w-24 h-24 p-2 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-200 m-2 border-[1px] border-[#eee];
+    @apply bg-white w-20 p-2 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-200 m-2 border-[1px] border-[#eee];
 
     & div {
-      @apply flex flex-col items-center;
+      @apply flex flex-col items-center w-9 h-9;
 
       & img {
-        @apply w-9 h-9;
+        @apply object-cover;
       }
 
       & p {
-        @apply text-[10px] text-center mt-2;
+        @apply text-xs text-center mt-2;
       }
     }
   }

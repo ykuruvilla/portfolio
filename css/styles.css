@@ -546,8 +546,7 @@ video {
 
 .skill-item {
   margin: 0.5rem;
-  height: 6rem;
-  width: 6rem;
+  width: 5rem;
   border-radius: 0.5rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -574,6 +573,12 @@ video {
     display: flex;
   }
   & div {
+    height: 2.25rem;
+  }
+  & div {
+    width: 2.25rem;
+  }
+  & div {
     flex-direction: column;
   }
   & div {
@@ -581,10 +586,8 @@ video {
   }
   & div {
     & img {
-      height: 2.25rem;
-    }
-    & img {
-      width: 2.25rem;
+      -o-object-fit: cover;
+         object-fit: cover;
     }
     & p {
       margin-top: 0.5rem;
@@ -593,7 +596,8 @@ video {
       text-align: center;
     }
     & p {
-      font-size: 10px;
+      font-size: 0.75rem;
+      line-height: 1rem;
     }
   }
 }
