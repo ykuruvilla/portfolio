@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .hamburger-line {
-    @apply block w-6 h-1 bg-white mb-1;
-  }
-
   .social-icon {
     @apply w-8 h-8 p-1 bg-white rounded-md border-2 border-white hover:shadow-md transition-shadow duration-200 cursor-pointer;
   }

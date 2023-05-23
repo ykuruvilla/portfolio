@@ -13,23 +13,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Yasha Kuruvilla</title>
   </head>
-
   <body id="home" class="bg-[#f7f7f7]">
-    <nav class="md:block md:bg-green md:p-4 md:fixed md:top-0 md:w-screen">
-      <ul class="flex space-x-2 justify-end text-white">
-        <li class="cursor:pointer"><a href="#home">Home</a></li>
-        <li class="cursor:pointer"><a href="#about">About</a></li>
-        <li class="cursor:pointer"><a href="#skills">Skills</a></li>
-        <li class="cursor:pointer"><a href="#projects">Projects</a></li>
+    <nav
+      class="p-5 text-white bg-green md:flex md:items-center md:justify-between"
+    >
+      <div class="flex justify-between items-end">
+        <div class="tracking-tighter">
+          <span class="text-4xl">Y</span> <span class="text-3xl">K</span>
+        </div>
+        <span class="text-3xl cursor-pointer md:hidden block">
+          <ion-icon id="menu" name="menu"></ion-icon>
+        </span>
+      </div>
+      <ul
+        id="navlist"
+        class="md:flex md:items-center bg-green md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 top-[-400px] transition-all ease-in duration-500 my-[-4px]"
+      >
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#home">Home</a>
+        </li>
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#about">About</a>
+        </li>
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#projects">Projects</a>
+        </li>
       </ul>
     </nav>
-    <button id="hamburger" class="md:hidden focus:outline-none">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </button>
 
-    <div class="space-y-10 font-sans text-black md:pt-20 mx-12 mb-10">
+    <div class="space-y-10 font-sans text-black md:pt-4 mx-12 mb-10">
       <section class="pt-10 flex flex-col items-center">
         <div class="flex flex-col items-center md:flex-row">
           <div class="border-2 border-black rounded-full mb-12 md:mr-10">
@@ -301,5 +316,13 @@
       </section>
     </div>
     <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
