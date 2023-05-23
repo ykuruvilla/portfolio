@@ -4,10 +4,426 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Yasha Kuruvilla</title>
+    <meta name="description" content="" />
   </head>
-  <body>
-    <h1 class="text-red-400 text-4xl">Hello World</h1>
+  <body id="home" class="bg-[#f7f7f7]">
+    <nav
+      class="p-5 text-white bg-green md:flex md:items-center md:justify-between"
+    >
+      <div class="flex justify-between items-end">
+        <div class="tracking-tighter">
+          <span class="text-4xl">Y</span> <span class="text-3xl">K</span>
+        </div>
+        <span class="text-3xl cursor-pointer md:hidden block">
+          <ion-icon id="menu" name="menu"></ion-icon>
+        </span>
+      </div>
+      <ul
+        id="navlist"
+        class="md:flex md:items-center bg-green md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 top-[-400px] transition-all ease-in duration-500 my-[-4px]"
+      >
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#home">Home</a>
+        </li>
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#about">About</a>
+        </li>
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="cursor:pointer mx-4 my-6 md:my-0 text-xl">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="space-y-10 font-sans text-black md:pt-4 mx-12 mb-10">
+      <section class="pt-10 flex flex-col items-center">
+        <div class="flex flex-col items-center md:flex-row">
+          <div class="border-2 border-black rounded-full mb-12 md:mr-10">
+            <img
+              class="object-cover w-64 h-64 md:w-[300px] md:h-[300px] rounded-full"
+              src="./assets/headshot.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="md:w-96">
+            <div class="text-center md:text-left">
+              <p>HI THERE! I'm</p>
+              <h1 class="text-4xl tracking-wider my-6">
+                <span class="text-green">YASHA</span> KURUVILLA
+              </h1>
+              <p class="text-lightgrey mb-8 tracking-wide">
+                A &#x1F1F9;&#x1F1F9; raised , &#x1F1EC;&#x1F1E7; based
+                <span class="text-green"> Web Developer</span>
+                who enjoys building interactive products that can make a
+                meaningful impact.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center sm:flex-row sm:items-center sm:space-x-3 justify-center md:justify-between"
+            >
+              <a
+                class="bg-green text-white px-9 py-4 rounded-[40px] w-36 text-center mb-4 sm:mb-0"
+                href="./assets/yasha-kuruvilla-resume.pdf"
+                download
+                >Resumé</a
+              >
+              <ul class="flex justify-center space-x-3">
+                <li class="social-icon">
+                  <a
+                    href="https://www.linkedin.com/in/yasha-kuruvilla/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/linkedin.png"
+                      alt="yasha's linkedin profile"
+                    />
+                  </a>
+                </li>
+                <li class="social-icon">
+                  <a href="https://github.com/ykuruvilla" target="_blank">
+                    <img
+                      src="./assets/github.png"
+                      alt="yasha's github profile"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="lg:max-w-5xl lg:mx-auto">
+        <div class="mb-10">
+          <h2 class="text-2xl inline pb-4 border-b-4 border-lightgrey">
+            ABOUT ME
+          </h2>
+        </div>
+        <p class="sm:bg-white sm:p-11 rounded-xl">
+          Hi there! I'm Yasha, a front-end developer with a passion for solving
+          challenging problems. I recently graduated from the
+          <span class="text-green">
+            BrainStation Software Engineering Bootcamp </span
+          >, where I gained hands-on experience in building web applications.
+          With a background in business analysis, I bring a unique perspective
+          to my development work, understanding both the technical and business
+          aspects of projects. I thrive in collaborative environments, love
+          learning, and am eager to contribute my skills to create impactful
+          applications. Let's connect and tackle exciting challenges together!
+        </p>
+      </section>
+      <section id="skills" class="lg:max-w-5xl lg:mx-auto">
+        <h2 class="text-2xl inline pb-4 border-b-4 border-lightgrey">SKILLS</h2>
+        <ul class="flex flex-wrap mt-10 sm:bg-white sm:p-11 rounded-xl">
+          <li class="skill-item">
+            <div>
+              <img src="./assets/html.png" alt="html logo" />
+              <p>HTML</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/css.svg" alt="css logo" />
+              <p>CSS</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/nextjs.svg" alt="next js logo" />
+              <p>Next.JS</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/react.png" alt="react logo" />
+              <p>React</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/tailwind.svg" alt="tailwind logo" />
+              <p>Tailwind</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/sass.svg" alt="sass logo" />
+              <p>Sass</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/ts.png" alt="typescript logo" />
+              <p>Typescript</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/mongodb.svg" alt="mongo db logo" />
+              <p>MongoDB</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/git.svg" alt="git logo" />
+              <p>Git</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/vscode.png" alt="vs code logo" />
+              <p>VS Code</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div>
+              <img src="./assets/tableau.svg" alt="tableau logo" />
+              <p>Tableau</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="projects" class="lg:max-w-5xl lg:mx-auto">
+        <h2 class="text-2xl inline pb-4 border-b-4 border-lightgrey">
+          PROJECTS
+        </h2>
+        <div class="mt-10 space-y-8">
+          <article class="project-item">
+            <div class="md:w-1/2">
+              <img
+                class="rounded-xl"
+                src="./assets/asteroids.png"
+                alt="asteroids"
+              />
+            </div>
+            <div class="p-5 md:w-1/2">
+              <div class="">
+                <h3 class="text-xl">
+                  Asteroids
+                  <span class="text-xs font-style: italic">(Desktop only)</span>
+                </h3>
+                <p>
+                  Technologies Used: <span class="text-green">Javascript</span>
+                </p>
+                <ul class="mt-3 pl-4 space-y-1">
+                  <li>Completely built with vanilla javascript</li>
+                  <li>Based on Atari's vintage Asteroids game</li>
+                </ul>
+              </div>
+              <div class="mt-3 space-x-2">
+                <a
+                  class="underline text-green"
+                  href="https://asteroids-pi.vercel.app/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  class="underline text-green"
+                  href="https://github.com/ykuruvilla/asteroids"
+                  target="_blank"
+                  >Repo</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="md:w-1/2">
+              <img
+                class="rounded-xl"
+                src="./assets/watchdle.png"
+                alt="watchdle"
+              />
+            </div>
+            <div class="p-5 md:w-1/2">
+              <div class="">
+                <h3 class="text-xl">Watchdle</h3>
+                <p>
+                  Technologies Used:
+                  <span class="text-green">Next.js , MongDB , REST API</span>
+                </p>
+                <ul class="mt-3 pl-4 space-y-1">
+                  <li>Built with NextJS, utilising MongoDB</li>
+                  <li>
+                    A Wordle styled guessing game based on Blizzard's Overwatch
+                    video game
+                  </li>
+                  <li>My first project using NextJS</li>
+                </ul>
+              </div>
+              <div class="mt-3 space-x-2">
+                <a
+                  class="underline text-green"
+                  href="https://watchdle.vercel.app/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  class="underline text-green"
+                  href="https://github.com/ykuruvilla/watchdle"
+                  target="_blank"
+                  >Repo</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="md:w-1/2">
+              <img
+                class="rounded-xl"
+                src="./assets/imdb.jpeg"
+                alt="imdb clone"
+              />
+            </div>
+            <div class="p-5 md:w-1/2">
+              <div class="">
+                <h3 class="text-xl">IMDb Clone</h3>
+                <p>
+                  Technologies Used:
+                  <span class="text-green">NextJS, Tailwind, REST API</span>
+                </p>
+                <ul class="mt-3 pl-4 space-y-1">
+                  <li>A simplified clone of the IMDb website</li>
+                  <li>
+                    Search for movies, get a summary, and see the average rating
+                  </li>
+                  <li>My first project using Tailwind</li>
+                </ul>
+              </div>
+              <div class="mt-3 space-x-2">
+                <a
+                  class="underline text-green"
+                  href="https://imdb-clone-kappa-gilt.vercel.app/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  class="underline text-green"
+                  href="https://github.com/ykuruvilla/imdb-clone"
+                  target="_blank"
+                  >Repo</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="lg:max-w-5xl lg:mx-auto mb-3">
+        <h2 class="text-2xl inline pb-4 border-b-4 border-lightgrey">
+          CONTACT ME
+        </h2>
+        <div class="mt-16 rounded-xl md:bg-white md:p-6">
+          <h4 class="text-xl">Get in Touch</h4>
+          <div
+            class="flex flex-col items-center bg-white shadow-md rounded-xl p-6 space-y-4 mt-4 md:max-w-lg md:mx-auto"
+          >
+            <ion-icon
+              class="text-3xl text-green"
+              name="mail-outline"
+            ></ion-icon>
+            <p class="text-xl underline font-semibold" id="my-email"></p>
+            <p>Email Me</p>
+          </div>
+          <div class="mt-5 p-2">
+            <h5 class="text-xl">Contact Form</h5>
+            <form id="contact-form" class="flex flex-col mt-5 space-y-4">
+              <div class="space-y-4 md:space-y-0 md:flex md:space-x-3">
+                <div class="flex flex-col md:w-1/2">
+                  <label for="full-name">Name</label>
+                  <input
+                    class="my-1 p-2 md:bg-[#f7f7f7]"
+                    type="text"
+                    name="name"
+                    id="full-name"
+                    placeholder="Your name"
+                  />
+                  <span id="name-error" class="text-xs invisible text-red-500"
+                    >Required field</span
+                  >
+                </div>
+                <div class="flex flex-col md:w-1/2">
+                  <label for="email-address">Email Address</label>
+                  <input
+                    class="my-1 p-2 md:bg-[#f7f7f7]"
+                    type="text"
+                    name="_replyto"
+                    id="email-address"
+                    placeholder="Your email"
+                  />
+                  <span
+                    id="email-format-error"
+                    class="text-xs hidden text-red-500"
+                    >Invalid email</span
+                  >
+                  <span
+                    id="email-length-error"
+                    class="text-xs invisible text-red-500"
+                    >Required field</span
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <label for="message">Message</label>
+                <textarea
+                  class="my-1 p-2 md:bg-[#f7f7f7]"
+                  rows="5"
+                  name="message"
+                  id="message"
+                  placeholder="Your message here..."
+                ></textarea>
+                <span id="message-error" class="text-xs invisible text-red-500"
+                  >Required field</span
+                >
+              </div>
+              <button
+                id="submit"
+                class="bg-green text-white px-9 py-4 rounded-[40px] w-full md:w-48 text-center mb-4 self-center"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>

@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .social-icon {
+    @apply w-8 h-8 p-1 bg-white rounded-md border-2 border-white hover:shadow-md transition-shadow duration-200 cursor-pointer;
+  }
+
+  .skill-item {
+    @apply bg-white w-20 p-2 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-200 m-2 border-[1px] border-[#eee];
+
+    & div {
+      @apply flex flex-col items-center;
+
+      & img {
+        @apply w-9 h-9;
+      }
+
+      & p {
+        @apply text-xs text-center mt-2;
+      }
+    }
+  }
+
+  .project-item {
+    @apply flex flex-col mx-auto md:flex-row md:justify-center md:items-center sm:p-5 bg-white rounded-xl shadow-md;
+    & ul {
+      @apply list-disc;
+    }
+  }
+}
