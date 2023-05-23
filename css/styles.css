@@ -573,12 +573,6 @@ video {
     display: flex;
   }
   & div {
-    height: 2.25rem;
-  }
-  & div {
-    width: 2.25rem;
-  }
-  & div {
     flex-direction: column;
   }
   & div {
@@ -586,8 +580,14 @@ video {
   }
   & div {
     & img {
-      -o-object-fit: cover;
-         object-fit: cover;
+      height: 2.25rem;
+    }
+    & img {
+      width: 2.25rem;
+    }
+    & img {
+      -o-object-fit: contain;
+         object-fit: contain;
     }
     & p {
       margin-top: 0.5rem;
